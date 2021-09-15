@@ -148,28 +148,21 @@
 .content__slideShow{
     margin-top: 80px;
     height: 420px;
-    width: 200%;
+    width: 100%;
     overflow: hidden;
     display: flex;
-}
-
-.content__slides{
-    padding-top: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    transition: 0.6s;
     z-index: -1;
 }
 
-.content__slides-navigation{
-    position: absolute;
+.content__slides{
     display: flex;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    transition: 0.6s;
+        
 }
 
 .content__slides-navigation-btn{
@@ -177,14 +170,120 @@
     width: 56px;
     border-radius: 50%;
     border: none;
-    margin: 24px;
+    margin: 0 24px;
     font-size: 1.8rem;
     color: var(--primary-color);
     background: var(--white-color);
-    text-align: center;
+    z-index: 1;
+}
+
+.content__slides-text{
+    color: var(--white-color);
 }
 
 .content__slides-navigation-btn:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* content__ticket */
+.content__tiket{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.content__tiket-item{
+    width: 320px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+}
+
+.content__ticket-img{
+    padding-top: 59%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content__ticket-body{
+    padding-left: 20px;
+}
+
+.content__ticket-options{
+    font-size: 1.4rem;
     color: var(--white-color);
     background: var(--primary-color);
+    padding: 10px;
+}
+
+.content__ticket-options-text{
+    padding: 10px;
+}
+
+.content__ticket-options-icon{
+    padding-right: 4px;
+}
+
+.content__ticket-options-link{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.content__ticket-options-link:hover{
+    text-decoration: underline;
+}
+
+.content__ticket-title{
+    line-height: 28px;
+}
+
+.content__ticket-title-link{
+    display: block;
+    line-height: 28px;
+    margin: 20px 0;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.content__ticket-title-link:hover{
+    color: var(--primary-color);
+}
+
+
+.content__ticket-decrip{
+    font-size: 1.4rem;
+    color: #505050;
+}
+
+.page-tile--custom .content__slides-text-head{
+    color: var(--primary-color);
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.page-tile--custom .content__slides-text-decrip{
+    color: var(--text-color);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.content__ticket-footer{
+    display:flex;
+    align-items: center;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.content__ticket-price{
+    padding-right: 20px;
+}
+
+.content__ticket-ratting-icon{
+    padding-right: 5px;
+}
+
+.content__ticket-ratting-text{
+    padding-left: 5px;
 }
