@@ -19,12 +19,25 @@ html{
     scroll-behavior: smooth;
 }
 
+/* btn */
+.btn{
+    width: 220px;
+    background: var(--primary-color);
+    font-size: 13px;
+    color: var(--white-color);
+    text-align: center;
+    padding: 18px 66px;
+    border: none;
+}
+
+/* page title */
 .page-tile{
     text-align: center;
     font-family: themify;
     color: var(--primary-color);
     font-size: 2.8rem;
     line-height: 58px;
+    margin-bottom: 40px;
 }
 
 .page-tile .content__slides-text-decrip{
@@ -36,7 +49,19 @@ html{
 .page-tile .content__slides-text-content{
     font-size: 2rem;
     line-height: 20px;
-    font-weight: 800;
+}
+
+.page-tile--custom .content__slides-text-head{
+    color: var(--primary-color);
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.page-tile--custom .content__slides-text-decrip{
+    color: var(--text-color);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 44px;
 }
 
 /* hover link */

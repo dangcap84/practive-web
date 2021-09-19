@@ -7,7 +7,8 @@
     align-items: center;
     padding: 0 20px;
     background-color: var(--white-color);
-    position: fixed;
+    position: fixed;    
+    z-index: 1;
 }
 
 .header__logo-img{
@@ -27,7 +28,7 @@
     transition: all 0.3s;
 }
 
-.header__nav-item:last-child:after{
+.header__nav-item:after{
     content: "";
     height: 32px;
     width: 100%;
@@ -57,12 +58,12 @@
     top: 100%;
     left: -25%;
     list-style: none;
-    padding: 40px 0 20px;
     background: var(--white-color);
     display: none;
     animation: roll ease-in-out 0.4s;
     transform-origin: 25% 0;
-    margin-left: 18px;
+    margin: 34px 0 0px 19px;
+    z-index: 1;
 }
 
 @keyframes roll {
@@ -89,7 +90,7 @@
     margin-top: 32px;
     height: 470px;
     transform-origin:  80% 0;
-    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.04);
+    box-shadow: px 6px 10px 4px rgba(0, 0, 0, 0.9);
 }
 
 .header__nav-sublist--special .header__nav-sublist-item-text{
@@ -174,7 +175,7 @@
     font-size: 1.8rem;
     color: var(--primary-color);
     background: var(--white-color);
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .content__slides-text{
@@ -194,9 +195,11 @@
 }
 
 .content__tiket-item{
-    width: 320px;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    max-width: 320px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
+    overflow: hidden;
 }
 
 .content__ticket-img{
@@ -204,6 +207,8 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+
 
 .content__ticket-body{
     padding-left: 20px;
@@ -243,6 +248,7 @@
     margin: 20px 0;
     text-decoration: none;
     color: var(--text-color);
+    transition: all .3s;
 }
 
 .content__ticket-title-link:hover{
@@ -253,18 +259,6 @@
 .content__ticket-decrip{
     font-size: 1.4rem;
     color: #505050;
-}
-
-.page-tile--custom .content__slides-text-head{
-    color: var(--primary-color);
-    font-size: 3.5rem;
-    font-weight: 300;
-}
-
-.page-tile--custom .content__slides-text-decrip{
-    color: var(--text-color);
-    font-size: 4rem;
-    font-weight: 700;
 }
 
 .content__ticket-footer{
@@ -280,10 +274,275 @@
     padding-right: 20px;
 }
 
+.content__ticket-price-icon{
+    padding-right: 0;
+}
+
 .content__ticket-ratting-icon{
     padding-right: 5px;
 }
 
 .content__ticket-ratting-text{
     padding-left: 5px;
+}
+
+/* Content__try */
+
+.content__try-section{
+    width: 720px;
+    margin: 0px 0 20px 24%;
+    list-style: none;
+    text-align: center;
+    padding: 108px 0 130px;
+}
+
+.content__try-video{
+    width: 720px;
+    display: inline-block;
+    position: relative;
+    z-index: -1;
+}
+
+.content__try-item-img{
+    width: 100%;
+}
+
+.content__try-item-play{
+    position: absolute;
+    top: 50%;
+    right: 46%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.content__try-item-text{
+    font-size: 1.4rem;
+    color: #505050;
+    line-height: 24px;
+}
+
+.content__try-item-btn:hover{
+    background: #23a9af;
+}
+
+/* content reviews */
+
+.content_review{
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 108px 0 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content__reviews-text{
+    text-align: center;
+    width: 540px;
+    height: 160px;
+    color: var(--white-color);
+}
+
+.content__reviews-text-decrip{
+    font-size: 6.5rem;
+    font-weight: 600;
+    line-height: 71px;
+}
+
+.content__reviews-text-content{
+    margin: 12px 0 0;
+    font-size: 1.7rem;
+    line-height: 69px;
+}
+
+
+.content__reviews-reviewer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content__reviewer-item{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background: var(--white-color);
+    border-radius: 3px;
+    width: 423px;
+    height: 230px;
+    font-size: 1.4rem;
+}
+
+.content__reviewer-avatar{
+    width: 107px;
+    height: 107px;
+    margin: 0px 0 60px 40px;
+}
+
+.content__reviewer-infor{
+    list-style: none;
+}
+
+.content__reviewer-infor-item{
+    line-height: 24px;
+    margin: 10px 0 0 20px;
+    padding-right: 55px;
+}
+
+.content__reviewer-link{
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.content__reviewer-link:hover{
+    color: var(--primary-color);
+}
+
+.content__reviewer-infor-icon{
+    color: var(--primary-color);
+}
+
+.content__reviewer-infor-text{
+    color: #505050;
+    font-size: 1.5rem;
+}
+
+.content__reviewer-infor-name{
+    font-weight: 600;
+    color: #212121;
+}
+
+/* content__enjoy */
+
+.content__enjoy-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 108px 130px 130px;
+}
+
+.enjoy-text-custom{
+    color: #505050;
+}
+
+.content__enjoy-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__enjoy-item{
+    width: 275px;
+}
+
+.content__enjoy-item-container{
+    list-style: none;
+    padding: 0 15px;
+}
+
+.content__enjoy-infor{
+    padding: 14px;
+    text-align: center;
+}
+
+.content__enjoy-infor-title{
+    color: var(--text-color);
+}
+
+.content__enjoy-infor-text{
+    font-size: 1.7rem;
+    color: #505050;
+}
+
+/* content__ratting */
+
+.content__ratting{
+   padding: 108px 0 130px 0;
+}
+
+.content__ratting-list{
+    display: flex;
+    list-style: none;
+}
+
+.content__ratting-item{
+    width: 337.25px;
+    position: relative;
+}
+
+.content__ratting-item:hover .content__ratting-wraper{
+    display: block;
+}
+
+.content__ratting-img{
+    width: 100%;
+    display: inherit;
+}
+
+.content__ratting-wraper{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding-bottom: 10px;
+    transform-origin: 50% bottom;
+    animation: roll-up linear 0.3s;
+    display: none;
+}
+
+@keyframes roll-up {
+    from{
+        opacity: 0;
+        transform: scaleY(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+.content__ratting-wraper-title{
+    padding-top: 30px;
+    font-size: 1.8rem;
+}
+
+.content__ratting-wraper-text{
+    font-size: 1.5rem;
+    padding: 20px 15px;
+    line-height: 20px;
+}
+.content__ratting-wraper-social{
+    font-size: 1.5rem;
+}
+
+.content__ratting-wraper-icon{
+    padding: 10px;
+}
+
+.content__ratting-quantity{
+    display: flex;
+    padding: 60px 100px;
+    background: #3abdc1;
+    height: 248px;
+    justify-content: space-between;
+}
+
+.content__ratting-quantity-item{
+    text-align: center;
+    width: 252.5px;
+    padding: 0 15px;
+    color: var(--white-color);
+}
+
+.content__ratting-quantity-number{
+    font-size: 6.2rem;
+    line-height: 55px;
+}
+
+.content__ratting-quantity-describe{
+    font-size: 2rem;
+    margin-top: 22px;
 }
