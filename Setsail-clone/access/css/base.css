@@ -97,10 +97,8 @@ html{
     color: var(--primary-color) !important;
 }
 
-.slide-img{
-    padding-top: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 2px;
-    height: 420px;
+/* responsive */
+
+@media (max-width: 739px){
+
 }
