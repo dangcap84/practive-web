@@ -598,17 +598,6 @@
     display: block;
     border-radius: 50%;
     overflow: hidden;
-    position: relative;
-}
-
-.content__chose-link::after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
 }
 
 .content__chose-link:hover .content__chose-img{
@@ -620,6 +609,17 @@
     height: 313px;
     transition: transform .3s;
     transform: scale(1.05);
+    position: relative;
+}
+
+.content__chose-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .content__chose-text{
